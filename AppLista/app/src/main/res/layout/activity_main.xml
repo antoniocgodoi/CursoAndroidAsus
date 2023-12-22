@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicativo Lista VIP Curso Android"
+        android:text="@string/txt_Titulo"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,11 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Telefone de Contato"
+        android:hint="@string/txt_hint_telefone_contato"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        tools:layout_editor_absoluteX="27dp" />
+        tools:layout_editor_absoluteX="27dp"
+        tools:ignore="Autofill" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -38,9 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Nome do Curso Desejado"
+        android:hint="@string/txt_hint_nome_do_curso_desejado"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
         tools:layout_editor_absoluteX="46dp" />
 
@@ -50,9 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Sobrenome"
+        android:hint="@string/txt_hint_sobrenome"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -64,9 +62,8 @@
         android:layout_margin="16dp"
         android:layout_marginTop="84dp"
         android:ems="10"
-        android:hint="Primeiro Nome"
+        android:hint="@string/txt_hint_primeiro_nome"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -78,7 +75,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/corBotoes"
-        android:text="LIMPAR"
+        android:text="@string/txt_botao_limpar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
@@ -89,7 +86,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/corBotoes"
-        android:text="SALVAR"
+        android:text="@string/txt_botao_salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
@@ -99,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:backgroundTint="@color/corBotoes"
-        android:text="FINALIZAR"
+        android:text="@string/txt_botao_finalizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
