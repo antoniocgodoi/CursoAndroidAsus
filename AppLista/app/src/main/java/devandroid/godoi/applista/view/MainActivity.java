@@ -1,8 +1,10 @@
-package devandroid.godoi.applista;
+package devandroid.godoi.applista.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import devandroid.godoi.applista.R;
 
 public class MainActivity extends AppCompatActivity {
 
