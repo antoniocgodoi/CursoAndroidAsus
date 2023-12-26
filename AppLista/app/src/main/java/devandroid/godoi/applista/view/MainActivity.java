@@ -3,6 +3,7 @@ package devandroid.godoi.applista.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.godoi.applista.R;
 
@@ -21,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
         pessoa1 = new Pessoa("Antônio", "Godoi", "Android", 967631234);
         pessoa2 = new Pessoa("José", "Feliciano", "Android", 1178847577);
 
-        String dadosPessoa1 = pessoa1.dadosPessoa();
-        String dadosPessoa2 = pessoa2.dadosPessoa();
+
+        Log.i("Primeira pessoa", pessoa1.toString());
+        Log.i("Segunda pessoa", pessoa2.toString());
 
     }
 }
