@@ -3,7 +3,7 @@ package devandroid.godoi.applista.model;
 public class Pessoa {
 
     private String nome, sobrenome, curso;
-    int telefone;
+    private int telefone;
 
     public void setCurso(String curso) {
         this.curso = curso;
@@ -37,6 +37,22 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                '}';
+    }
+
     public Pessoa() {}
+
+    public Pessoa(String nome, String sobrenome, String curso, int telefone)
+    {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.curso = curso;
+        this.telefone = telefone;
+    }
 
 }

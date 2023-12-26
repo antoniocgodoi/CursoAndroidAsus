@@ -10,7 +10,7 @@ import devandroid.godoi.applista.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
 
-    Pessoa pessoa;
+    Pessoa pessoa1, pessoa2;
 
 
     @Override
@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        pessoa = new Pessoa();
+        pessoa1 = new Pessoa("Antônio", "Godoi", "Android", 967631234);
+        pessoa2 = new Pessoa("José", "Feliciano", "Android", 1178847577);
+
+        String dadosPessoa1 = pessoa1.dadosPessoa();
+        String dadosPessoa2 = pessoa2.dadosPessoa();
+
     }
 }
