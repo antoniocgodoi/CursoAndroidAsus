@@ -42,13 +42,15 @@ public class Pessoa {
         return "Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", sobrenome='" + sobrenome + '\'' +
+                ", curso = " + curso + '\'' + ", telefone = " +
+                String.valueOf(telefone) +
                 '}';
     }
 
-    public Pessoa() {}
+    public Pessoa() {
+    }
 
-    public Pessoa(String nome, String sobrenome, String curso, int telefone)
-    {
+    public Pessoa(String nome, String sobrenome, String curso, int telefone) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.curso = curso;
